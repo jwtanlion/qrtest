@@ -4,7 +4,10 @@
 
 <video id="qr-video"></video>
 
-<script type="text/javascript">
+<script type="module">
+    import QrScanner from "https://nimiq.github.io/qr-scanner/qr-scanner.min.js";
+    QrScanner.WORKER_PATH = 'https://nimiq.github.io/qr-scanner/qr-scanner-worker.min.js';
+    
     function setResult(result) {
         alert(result);
     }
