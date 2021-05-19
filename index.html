@@ -11,7 +11,8 @@
     function setResult(result) {
         alert(result);
     }
-	
+    
+    const video = document.getElementById('qr-video');
     const scanner = new QrScanner(video, result => setResult(result));
     scanner.start();
 </script>
